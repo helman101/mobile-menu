@@ -27,7 +27,34 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+.nav-view ul {
+  margin: 50px 20px 0 20px !important;
+  margin-top: 50px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid dimgray;
+}
+
+li {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+
+.nav-view li {
+  padding-top: 20px;
+  border-bottom: 1px solid white;
+  text-align: left;
+}
+
+#desktop-nav,
+#desktop-nav ul {
   display: none;
 }
 
@@ -225,18 +252,6 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-li {
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 43px;
-  text-align: center;
-  color: #fff;
-  padding: 5px;
 }
 
 .card-stacks li {
@@ -572,21 +587,6 @@ textarea {
   z-index: 1;
 }
 
-.nav-view ul {
-  margin: 50px 20px 0 20px !important;
-  margin-top: 50px;
-  width: 100%;
-  text-align: left;
-  border-bottom: 1px solid dimgray;
-}
-
-.nav-view li {
-  padding-top: 20px;
-  border-bottom: 1px solid white;
-  text-align: left;
-}
-
-
 .nav-view ul a {
   color: white;
   font-weight: bold;
@@ -601,5 +601,4 @@ textarea {
   right: 10px;
   background-color: transparent;
   border: none;
-
 }
