@@ -14,7 +14,8 @@
       <button type="button" class="menu-bars">
         <i class="fas fa-bars"></i>
       </button>
-      <nav id="desktop-nav">
+      <nav id="desktop-nav" class="nav">
+        <BUTTON type="button" class="nav-btn">X</BUTTON>
         <ul>
           <li><a class="nav-link" href="#projects">Portoflio</a></li>
           <li><a class="nav-link" href="#about-me">About</a></li>
@@ -442,5 +443,25 @@
       src="https://kit.fontawesome.com/e966a3bd22.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const btn = document.querySelector('.menu-bars');
+      const navBtn = document.querySelector('.nav-btn');
+      const ulList = document.querySelector('.nav').querySelectorAll('li');
+
+      const toggleDisplay = (e) => {
+        const elem = document.querySelector('.nav');
+
+        if (elem.hasAttribute('id')) {
+          elem.removeAttribute('id');
+          elem.classList.add('nav-view')
+        } else {
+          elem.setAttribute('id', 'desktop-nav');
+          elem.classList.remove('nav-view')
+        }
+      }
+
+      btn.onclick = toggleDisplay;
+      navBtn.onclick = toggleDisplay;
+    </script>
   </body>
 </html>
